@@ -1,0 +1,23 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/wordpress
+    overwrite: true
+
+permissions:
+  - object: /var/www/wordpress
+    pattern: "**"
+    owner: www-data
+    group: www-data
+    mode: 775
+    type:
+      - directory
+      - file
+
+hooks:
+  BeforeInstall:
+
+  AfterInstall:
+
+  ApplicationStop:
