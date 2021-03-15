@@ -15,9 +15,9 @@ permissions:
       - directory
       - file
 
-hooks:
-  BeforeInstall:
+#hooks:
+#  BeforeInstall:
 
-  AfterInstall:
+#  AfterInstall:
 
-  ApplicationStop:
+#  ApplicationStop:
