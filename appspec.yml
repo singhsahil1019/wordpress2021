@@ -3,17 +3,17 @@ os: linux
 files:
   - source: /
     destination: /var/www/wordpress
-    overwrite: true
+#    overwrite: true
 
-permissions:
-  - object: /var/www/wordpress
-    pattern: "**"
-    owner: www-data
-    group: www-data
-    mode: 775
-    type:
-      - directory
-      - file
+#permissions:
+#  - object: /var/www/wordpress
+#    pattern: "**"
+#    owner: www-data
+#    group: www-data
+#    mode: 775
+#    type:
+#      - directory
+#      - file
 
 #hooks:
 #  BeforeInstall:
