@@ -99,14 +99,14 @@ if ( empty( $doing_wp_cron ) ) {
 	} else {
 		$doing_wp_cron = $_GET['doing_wp_cron'];
 	}
-}
+}    
 
 /*
  * The cron lock (a unix timestamp set when the cron was spawned),
  * must match $doing_wp_cron (the "key").
  */
 if ( $doing_cron_transient !== $doing_wp_cron ) {
-	return;
+	return; 
 }
 
 foreach ( $crons as $timestamp => $cronhooks ) {
